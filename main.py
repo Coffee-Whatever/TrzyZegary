@@ -20,6 +20,8 @@ class Screen(GridLayout):
     def __init__(self, **kwargs):
         super(Screen, self).__init__(**kwargs)
         Clock.schedule_interval(self.update, 0.000001)
+        # self.cols = 2
+        # self.rows = 3
 
     def update(self, what='useless'):
         self.time1.text = str(datetime.now(pytz.timezone("Europe/Warsaw")))
